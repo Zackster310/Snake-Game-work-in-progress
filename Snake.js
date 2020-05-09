@@ -26,6 +26,11 @@ class Snake{
     update(){
         this.x = this.x + this.xdir;
         this.y = this.y + this.ydir;
+        
+        if(this.snakeX.length >= this.tailCount){
+            this.snakeX.shift();
+            this.snakeY.shift();
+        }
 
         this.snakeX.push(this.x);
         this.snakeY.push(this.y);
