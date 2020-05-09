@@ -1,11 +1,14 @@
 class Snake{
-    constructor(x,y){
+    constructor(){
         this.snakeX = [];
         this.snakeY = [];
 
         this.snakeX.push(x);
         this.snakeY.push(y);
 
+        this.x = 400;
+        this.y = 300;
+        
         this.xdir = 0;
         this.ydir = 0;
 
